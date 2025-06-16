@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as Donor - LifeConnect</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <span>LifeConnect</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <div class="menu">
+        <input class="input" type="checkbox" id="toggle" />
+        <label id="show-menu" for="toggle">
+          <a class="btn">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <a href="index.html"class="btn">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="index.html#about"class="btn">
+            <i class="fa-solid fa-eject"></i>
+          </a>
+          <a href="index.html#services"class="btn">
+            <i class="fa-solid fa-bell-concierge"></i>
+          </a>
+          <a href="index.html#contact"class="btn">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+          <a href="organ.html"class="btn">
+            <i class="fa-solid fa-lungs"></i>
+          </a>
+        </label>
+      </div>
+
+    <div class="container">
+        <h2>Organ Donor Request</h2>
+
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="bloodGroup" placeholder="Blood Group" required>
+            <input type="text" id="organs" placeholder="Organs to Donate (e.g., Kidney, Liver)" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <h3>Registered Donors</h3>
+        <div id="donorList"></div>
+
+        <button id="notifyHospitals">Notify Hospitals</button>
+    </div>
+    <div>
+        <a href="MediSync/indexs.html" class="chatbot-icon">
+            <i class="fas fa-house-medical"></i>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2025 LifeConnect. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+
+
+
+</body>
+</html>

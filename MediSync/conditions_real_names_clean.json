@@ -1,0 +1,402 @@
+{
+    "Diabetes": {
+        "symptoms": [
+            "joint pain",
+            "weakness",
+            "weight loss",
+            "headache"
+        ],
+        "medicine": "Chloroquine, Oseltamivir, Ciprofloxacin",
+        "generalAdvice": "Consult a doctor if symptoms persist."
+    },
+    "Hypertension": {
+        "symptoms": [
+            "headache",
+            "nausea",
+            "dizziness",
+            "sweating"
+        ],
+        "medicine": "Budesonide, Albuterol, Ciprofloxacin",
+        "generalAdvice": "Use medications as prescribed and avoid self-medication."
+    },
+    "Asthma": {
+        "symptoms": [
+            "vomiting",
+            "headache",
+            "difficulty breathing",
+            "fatigue"
+        ],
+        "medicine": "Budesonide, Montelukast, Aspirin",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    },
+    "Migraine": {
+        "symptoms": [
+            "fatigue",
+            "vomiting",
+            "shortness of breath",
+            "chills"
+        ],
+        "medicine": "Prednisone, Albuterol, Chloroquine",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    },
+    "Arthritis": {
+        "symptoms": [
+            "weakness",
+            "vomiting",
+            "fatigue",
+            "rash"
+        ],
+        "medicine": "Budesonide, Chloroquine, Doxycycline",
+        "generalAdvice": "Follow a healthy diet and exercise regularly."
+    },
+    "Pneumonia": {
+        "symptoms": [
+            "chills",
+            "fever",
+            "joint pain",
+            "fatigue"
+        ],
+        "medicine": "Prednisone, Hydrochlorothiazide, Budesonide",
+        "generalAdvice": "Avoid allergens and use prescribed medications."
+    },
+    "Bronchitis": {
+        "symptoms": [
+            "fever",
+            "pain",
+            "weakness",
+            "headache"
+        ],
+        "medicine": "Ibuprofen, Paracetamol, Albuterol",
+        "generalAdvice": "Take vitamins and supplements if recommended by a doctor."
+    },
+    "Influenza": {
+        "symptoms": [
+            "shortness of breath",
+            "rash",
+            "joint pain",
+            "high blood pressure"
+        ],
+        "medicine": "Hydrochlorothiazide, Budesonide, Albuterol",
+        "generalAdvice": "Stay hydrated and get plenty of rest."
+    },
+    "Malaria": {
+        "symptoms": [
+            "difficulty breathing",
+            "weight loss",
+            "headache",
+            "cough"
+        ],
+        "medicine": "Celecoxib, Hydrochlorothiazide, Doxycycline",
+        "generalAdvice": "Get enough sleep and reduce stress."
+    },
+    "Dengue": {
+        "symptoms": [
+            "vomiting",
+            "cough",
+            "dizziness",
+            "rash"
+        ],
+        "medicine": "Aspirin, Albuterol, Amoxicillin",
+        "generalAdvice": "Follow a healthy diet and exercise regularly."
+    },
+    "Anemia": {
+        "symptoms": [
+            "pain",
+            "dizziness",
+            "nausea",
+            "muscle aches"
+        ],
+        "medicine": "Albuterol, Metformin, Levofloxacin",
+        "generalAdvice": "Follow a healthy diet and exercise regularly."
+    },
+    "Depression": {
+        "symptoms": [
+            "sore throat",
+            "shortness of breath",
+            "chills",
+            "weakness"
+        ],
+        "medicine": "Losartan, Paracetamol, Chloroquine",
+        "generalAdvice": "Avoid allergens and use prescribed medications."
+    },
+    "Anxiety": {
+        "symptoms": [
+            "chills",
+            "dizziness",
+            "cough",
+            "fever"
+        ],
+        "medicine": "Doxycycline, Aspirin, Sumatriptan",
+        "generalAdvice": "Consult a doctor if symptoms persist."
+    },
+    "COVID-19": {
+        "symptoms": [
+            "joint pain",
+            "shortness of breath",
+            "pain",
+            "cough"
+        ],
+        "medicine": "Prednisone, Doxycycline, Ciprofloxacin",
+        "generalAdvice": "Maintain hygiene and avoid crowded places."
+    },
+    "Chickenpox": {
+        "symptoms": [
+            "vomiting",
+            "weakness",
+            "pain",
+            "fever"
+        ],
+        "medicine": "Aspirin, Doxycycline, Albuterol",
+        "generalAdvice": "Monitor your health regularly and take necessary precautions."
+    },
+    "Measles": {
+        "symptoms": [
+            "chills",
+            "nausea",
+            "vomiting",
+            "muscle aches"
+        ],
+        "medicine": "Montelukast, Ibuprofen, Sumatriptan",
+        "generalAdvice": "Get enough sleep and reduce stress."
+    },
+    "Eczema": {
+        "symptoms": [
+            "high blood pressure",
+            "weakness",
+            "blurred vision",
+            "joint pain"
+        ],
+        "medicine": "Celecoxib, Montelukast, Aspirin",
+        "generalAdvice": "Use medications as prescribed and avoid self-medication."
+    },
+    "Psoriasis": {
+        "symptoms": [
+            "dizziness",
+            "headache",
+            "blurred vision",
+            "muscle aches"
+        ],
+        "medicine": "Losartan, Amoxicillin, Montelukast",
+        "generalAdvice": "Follow a healthy diet and exercise regularly."
+    },
+    "Hepatitis": {
+        "symptoms": [
+            "rash",
+            "dizziness",
+            "difficulty breathing",
+            "weakness"
+        ],
+        "medicine": "Aspirin, Azithromycin, Levofloxacin",
+        "generalAdvice": "Get enough sleep and reduce stress."
+    },
+    "Cholera": {
+        "symptoms": [
+            "fatigue",
+            "chills",
+            "sweating",
+            "dizziness"
+        ],
+        "medicine": "Chloroquine, Hydrochlorothiazide, Prednisone",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    },
+    "Typhoid": {
+        "symptoms": [
+            "nausea",
+            "muscle aches",
+            "shortness of breath",
+            "sore throat"
+        ],
+        "medicine": "Azithromycin, Ciprofloxacin, Prednisone",
+        "generalAdvice": "Maintain hygiene and avoid crowded places."
+    },
+    "Gout": {
+        "symptoms": [
+            "high blood pressure",
+            "nausea",
+            "sweating",
+            "weakness"
+        ],
+        "medicine": "Doxycycline, Metformin, Celecoxib",
+        "generalAdvice": "Stay hydrated and get plenty of rest."
+    },
+    "Lupus": {
+        "symptoms": [
+            "vomiting",
+            "sore throat",
+            "difficulty breathing",
+            "sweating"
+        ],
+        "medicine": "Montelukast, Albuterol, Hydrochlorothiazide",
+        "generalAdvice": "Consult a doctor if symptoms persist."
+    },
+    "Alzheimer": {
+        "symptoms": [
+            "cough",
+            "shortness of breath",
+            "fatigue",
+            "pain"
+        ],
+        "medicine": "Losartan, Chloroquine, Ciprofloxacin",
+        "generalAdvice": "Stay hydrated and get plenty of rest."
+    },
+    "Parkinson": {
+        "symptoms": [
+            "chills",
+            "shortness of breath",
+            "muscle aches",
+            "blurred vision"
+        ],
+        "medicine": "Celecoxib, Oseltamivir, Levofloxacin",
+        "generalAdvice": "Stay hydrated and get plenty of rest."
+    },
+    "Glaucoma": {
+        "symptoms": [
+            "weight loss",
+            "headache",
+            "fatigue",
+            "sweating"
+        ],
+        "medicine": "Paracetamol, Budesonide, Prednisone",
+        "generalAdvice": "Follow a healthy diet and exercise regularly."
+    },
+    "Cataract": {
+        "symptoms": [
+            "cough",
+            "high blood pressure",
+            "joint pain",
+            "headache"
+        ],
+        "medicine": "Ibuprofen, Budesonide, Prednisone",
+        "generalAdvice": "Avoid allergens and use prescribed medications."
+    },
+    "Osteoporosis": {
+        "symptoms": [
+            "vomiting",
+            "chills",
+            "fever",
+            "muscle aches"
+        ],
+        "medicine": "Levofloxacin, Azithromycin, Metformin",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    },
+    "Leukemia": {
+        "symptoms": [
+            "joint pain",
+            "shortness of breath",
+            "cough",
+            "sweating"
+        ],
+        "medicine": "Ciprofloxacin, Prednisone, Celecoxib",
+        "generalAdvice": "Get enough sleep and reduce stress."
+    },
+    "Lymphoma": {
+        "symptoms": [
+            "high blood pressure",
+            "shortness of breath",
+            "sore throat",
+            "rash"
+        ],
+        "medicine": "Ciprofloxacin, Amoxicillin, Montelukast",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    },
+    "Melanoma": {
+        "symptoms": [
+            "rash",
+            "chills",
+            "fever",
+            "joint pain"
+        ],
+        "medicine": "Doxycycline, Montelukast, Losartan",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    },
+    "Pancreatitis": {
+        "symptoms": [
+            "sweating",
+            "fever",
+            "nausea",
+            "chills"
+        ],
+        "medicine": "Celecoxib, Montelukast, Sumatriptan",
+        "generalAdvice": "Avoid allergens and use prescribed medications."
+    },
+    "Gastritis": {
+        "symptoms": [
+            "cough",
+            "weight loss",
+            "blurred vision",
+            "weakness"
+        ],
+        "medicine": "Budesonide, Celecoxib, Oseltamivir",
+        "generalAdvice": "Stay hydrated and get plenty of rest."
+    },
+    "Ulcer": {
+        "symptoms": [
+            "weight loss",
+            "sweating",
+            "cough",
+            "difficulty breathing"
+        ],
+        "medicine": "Chloroquine, Ibuprofen, Azithromycin",
+        "generalAdvice": "Stay hydrated and get plenty of rest."
+    },
+    "Colitis": {
+        "symptoms": [
+            "sweating",
+            "vomiting",
+            "joint pain",
+            "fatigue"
+        ],
+        "medicine": "Losartan, Prednisone, Chloroquine",
+        "generalAdvice": "Monitor your health regularly and take necessary precautions."
+    },
+    "Crohn's Disease": {
+        "symptoms": [
+            "cough",
+            "blurred vision",
+            "high blood pressure",
+            "shortness of breath"
+        ],
+        "medicine": "Doxycycline, Celecoxib, Metformin",
+        "generalAdvice": "Maintain hygiene and avoid crowded places."
+    },
+    "Celiac Disease": {
+        "symptoms": [
+            "nausea",
+            "cough",
+            "rash",
+            "sweating"
+        ],
+        "medicine": "Ciprofloxacin, Budesonide, Prednisone",
+        "generalAdvice": "Get enough sleep and reduce stress."
+    },
+    "Sinusitis": {
+        "symptoms": [
+            "fever",
+            "shortness of breath",
+            "muscle aches",
+            "high blood pressure"
+        ],
+        "medicine": "Metformin, Doxycycline, Azithromycin",
+        "generalAdvice": "Monitor your health regularly and take necessary precautions."
+    },
+    "Tonsillitis": {
+        "symptoms": [
+            "cough",
+            "chills",
+            "pain",
+            "vomiting"
+        ],
+        "medicine": "Sumatriptan, Aspirin, Budesonide",
+        "generalAdvice": "Monitor your health regularly and take necessary precautions."
+    },
+    "Otitis Media": {
+        "symptoms": [
+            "fever",
+            "blurred vision",
+            "muscle aches",
+            "headache"
+        ],
+        "medicine": "Aspirin, Levofloxacin, Budesonide",
+        "generalAdvice": "Avoid smoking and alcohol for better recovery."
+    }
+}

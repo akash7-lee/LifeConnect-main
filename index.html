@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LifeConnect - A blood and organ donation platform to connect donors and recipients.">
+    <meta name="keywords" content="blood donation, organ donation, donor, recipient, LifeConnect">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="NHGxn7ebHmTfhPik-XvuG_djPXmJHdiYcBfeMBQconk" />
+    <title>LifeConnect - Donate Blood & Organs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <span>LifeConnect</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="organ.html" class="btn-login">Organ</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <input class="input" type="checkbox" id="toggle" />
+        <label id="show-menu" for="toggle">
+          <a class="btn">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <a href="#home"class="btn">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="#about"class="btn">
+            <i class="fa-solid fa-eject"></i>
+          </a>
+          <a href="#services"class="btn">
+            <i class="fa-solid fa-bell-concierge"></i>
+          </a>
+          <a href="#contact"class="btn">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+          <a href="organ.html"class="btn">
+            <i class="fa-solid fa-lungs"></i>
+          </a>
+        </label>
+      </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Save Lives, Donate Today</h1>
+            <p>Join LifeConnect to connect blood and organ donors with those in need.</p>
+            <div class="cta-buttons">
+                <a href="register-donor.html" class="btn-primary">Register as Donor</a>
+                <a href="request-donation.html" class="btn-secondary">Request Donation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About LifeConnect</h2>
+        <p>LifeConnect is a platform dedicated to bridging the gap between donors and recipients. Our mission is to save lives by making the donation process faster, easier, and more efficient.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-tint"></i>
+                <a href="blood-donation.html"><h3>Blood Donation</h3></a>
+                <p>Connect with blood donors in your area and save lives.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-heart"></i>
+                <a href="organ-donation.html"><h3>Organ Donation</h3></a>
+                <p>Find compatible organ donors and give the gift of life.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-bell"></i>
+                <a href="view-register-person.html"><h3>View Register-Person</h3></a>
+                <p>Get notified instantly when a match is found.</p>
+            </div>
+        </div>
+        <div>
+            <a href="MediSync/indexs.html" class="chatbot-icon">
+                <i class="fas fa-house-medical"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LifeConnect. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+   <!-- Firebase SDK -->
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>

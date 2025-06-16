@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;;
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00b3b3;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 1000;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #00ffff;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #00b3b3;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: #00ffff;
+    margin-right: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.message {
+    text-align: left;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.user {
+    background:aqua;
+    color: white;
+    text-align: right;
+}
+
+.bot {
+    background: #333;
+    color: white;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background:aqua;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+.navbar {
+    flex-direction: column;
+    align-items: center;
+}
+}

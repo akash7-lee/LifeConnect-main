@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeConnect - View Register-Person</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <span>LifeConnect</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="organ.html" class="btn-login">Organ</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <input class="input" type="checkbox" id="toggle" />
+        <label id="show-menu" for="toggle">
+          <a class="btn">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <a href="index.html"class="btn">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="index.html#about"class="btn">
+            <i class="fa-solid fa-eject"></i>
+          </a>
+          <a href="index.html#services"class="btn">
+            <i class="fa-solid fa-bell-concierge"></i>
+          </a>
+          <a href="index.html#contact"class="btn">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+          <a href="organ.html"class="btn">
+            <i class="fa-solid fa-lungs"></i>
+          </a>
+        </label>
+      </div>
+    <div class="search-bar">
+        <div class="searchbar">
+            <input type="text" id="search-bar" placeholder="Search Blood Group..." onkeyup="searchBloodGroup()">&nbsp;
+            <i class="fa-solid fa-magnifying-glass" style="color: aqua;"></i>
+            
+        </div>
+        <button  class="mapbutton"id="map-button" onclick="showAllLocations()">Show All on Map</button>
+        <a href="hospital.html" class="hospital_button">Hospital Registration</a>
+    </div>
+
+<!-- Google Map Container -->
+<div id="map"></div>
+<script>
+    function initMap() {
+        console.log("Google Maps API Loaded!");  // Debugging log
+        var map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 0, lng: 0 },  // Default center
+            zoom: 2,
+        });
+    }
+    function showmap(){
+        document.getElementById("map").style.display="block"
+    }
+</script>
+
+
+<!-- Include Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArOJTL-AzZn0DccnNpCu2YTNX_KRUyC4s&callback=initMap"></script>
+
+
+
+
+    <div class="container">
+        <!-- Example User Card -->
+        <div class="register-container">
+            <h2>Mohan</h2>
+            <h5>mohanmanivannan123@gmail.com</h5>
+            <h5>9597256330</h5>
+            <h2>A+</h2>
+            <h5>Dharmapuri, Tamil Nadu</h5>
+            <button onclick="sendMessage(event, '9597256330', 'mohanmanivannan123@gmail.com', 'Mohan', 'A+', 'Dharmapuri')">Send</button>
+            <button onclick="deleteDetails(event, '9597256330')">Delete</button>
+        </div>
+    </div>
+
+    <!-- Popup for Adding Details -->
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Details</h2>
+        <form>
+            <input type="text" placeholder="Name" id="name-input">
+            <input type="email" placeholder="Email ID" id="email-input">
+            <input type="tel" placeholder="Phone Number" id="phonenumber-input">
+            <input type="text" placeholder="Blood Group" id="bloodgroup-input">
+            <input type="text" placeholder="Location" id="location-input">
+            <button type="button" id="add-details">ADD</button>
+            <button type="button" id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <!-- Chatbot Icon -->
+    <a href="MediSync/indexs.html" class="chatbot-icon">
+        <i class="fas fa-house-medical"></i>
+    </a>
+    <button class="map-button" onclick="showmap()" >
+        <i class="fa-solid fa-map-location-dot" style="display: block;font-size:34px; color: black;"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LifeConnect. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="apps.js"></script>
+</body>
+</html>

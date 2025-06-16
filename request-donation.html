@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Donation - LifeConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i>
+            <span>LifeConnect</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="organ.html" class="btn-login">Organ</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <input  class="input" type="checkbox" id="toggle" />
+        <label id="show-menu" for="toggle">
+          <a class="btn">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <a href="index.html"class="btn">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a href="index.html#about"class="btn">
+            <i class="fa-solid fa-eject"></i>
+          </a>
+          <a href="index.html#services"class="btn">
+            <i class="fa-solid fa-bell-concierge"></i>
+          </a>
+          <a href="index.html#contact"class="btn">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+          <a href="organ.html"class="btn">
+            <i class="fa-solid fa-lungs"></i>
+          </a>
+        </label>
+      </div>
+
+    <!-- Request Donation Form -->
+    <section class="request-donation">
+        <h2>Request Donation</h2>
+        <form id="requestForm" action="view-register-person.html">
+            <input type="text" id="patientName" placeholder="Patient Name" required>
+            <input type="email" id="requesterEmail" placeholder="Your Email" required>
+            <input type="tel" id="requesterPhone" placeholder="Your Phone Number" required>
+            <select id="donationType" required>
+                <option value="" disabled selected>Select Donation Type</option>
+                <option value="blood">Blood</option>
+                <option value="organ">Organ</option>
+            </select>
+            <select id="bloodType" required>
+                <option value="" disabled selected>Select Blood Type (if applicable)</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            <input type="text" id="hospitalName" placeholder="Hospital Name" required>
+            <input type="text" id="location" placeholder="Hospital Location" required>
+            <textarea id="additionalInfo" placeholder="Additional Information"></textarea>
+            <button type="submit" class="btn-primary">Submit Request</button>
+        </form>
+    </section>
+    <div>
+        <a href="MediSync/indexs.html" class="chatbot-icon">
+            <i class="fas fa-house-medical"></i>
+        </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LifeConnect. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

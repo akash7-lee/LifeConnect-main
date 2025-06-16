@@ -1,0 +1,642 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00b3b3;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: #00ffff;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 16px;
+}
+
+.btn-login {
+    background-color: #00ffff;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #00b3b3;
+}
+.input {
+    position: absolute;
+    display: none
+}
+.menu {
+  margin: 0 auto;
+  position: fixed;
+  top: 40px;
+  right: 80px;
+  margin-left: -25px;
+  margin-top: -25px;
+  z-index: 2000;
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+i { font-size: 24px; color:aqua }
+.btn {
+  background:#1a1a1a;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(48,48,48, .1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.btn + .btn {
+  opacity: 0;
+  z-index: -2;
+  -webkit-transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44);
+  transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44);
+}
+.btn i + i {
+  display: none;
+}
+.btn:nth-child(2) {
+  top: 0px;
+  transition-delay: 0s
+}
+.btn:nth-child(3) {
+  top: 0px;
+  right: 0px;
+  transition-delay: 0.1s
+}
+.btn:nth-child(4) {
+  right: 0px;
+  transition-delay: 0.2s
+}
+.btn:nth-child(5) {
+  top: 0px;
+  right: 0px;
+  transition-delay: 0.3s
+}
+.btn:nth-child(6) {
+  top: 0px;
+  transition-delay: 0.4s
+}
+
+input#toggle:checked ~ #show-menu .btn:nth-child(2) {
+  top:50px;right:80px; opacity:1;
+}
+input#toggle:checked ~ #show-menu .btn i + i {
+  display: block;
+}
+input#toggle:checked ~ #show-menu .btn:first-child i:first-child {
+  display: none;
+}
+input#toggle:checked ~ #show-menu .btn:nth-child(3) {
+  top:100px;right:50px;opacity:1;
+}
+input#toggle:checked ~ #show-menu .btn:nth-child(4) {
+  top: 150px; right:10px;opacity:1;
+}
+input#toggle:checked ~ #show-menu .btn:nth-child(5) {
+  top :200px;right:-30px;opacity:1;
+}
+input#toggle:checked ~ #show-menu .btn:nth-child(6) {
+  top:250px;right: -70px; opacity:1;
+}
+
+input#toggle:checked ~ #show-menu .btn .menuBtn {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+input#toggle:checked ~ #show-menu .btn .closeBtn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.closeBtn {
+  transform: translateY(50px);
+  opacity: 0;
+}
+.menuBtn, .closeBtn {
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.menu{
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn-primary, .cta-buttons .btn-secondary {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #00ffff;
+    color: #121212;
+
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.8;
+}
+
+/* About Section */
+.about, .services, .contact {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.about h2, .services h2, .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Register Donor and Request Donation Pages */
+.register-donor, .request-donation {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.register-donor h2, .request-donation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.register-donor form, .request-donation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-donor input, .request-donation input,
+.register-donor select, .request-donation select,
+.register-donor textarea, .request-donation textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.register-donor button, .request-donation button {
+    margin-top: 20px;
+}
+/* Blood Donation and Organ Donation Pages */
+.blood-hero, .organ-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/blood-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.organ-hero {
+    background-image: url('images/organ-hero-bg.jpg');
+}
+
+.blood-hero h1, .organ-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.blood-hero p, .organ-hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.blood-info, .organ-info {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.blood-info h2, .organ-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blood-info ul, .organ-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blood-info li, .organ-info li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #00ffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.chatbot-icon i {
+    font-size: 28px;
+    color: #121212;
+}
+
+.chatbot-icon:hover {
+    transform: scale(1.1);
+    background-color: #00b3b3;
+}
+/* Real-Time Alerts Section */
+.alerts {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.alerts h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.alerts p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#notificationStatus {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00ffff;
+}
+
+/*view-register-person*/
+.container{
+    padding: 10px;
+}
+.register-container{
+     padding: 15px;
+     width: 15%;
+     background-color: black;
+     border-radius: 20px;
+     margin: 30px;
+     display: inline-block;
+     vertical-align: top;
+}
+.register-container h2{
+    color: aqua;
+}
+#map {
+    width: 1490px;
+    height: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 10px solid #00FFFF;
+    display: none;
+}
+.map-button{
+    background-color: #00ffff;
+    color: black;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 190px;
+    right: 25px;
+}
+
+.searchbar{
+
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 2px solid #00FFFF; /* Aqua border */
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+.search-bar{
+    display: flex;
+    gap:10px;
+}
+.mapbutton{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 2px solid #00FFFF; /* Aqua border */
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+.hospital_button{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 2px solid #00FFFF; /* Aqua border */
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+.searchbar::placeholder{
+    color: #aaa;
+}
+.register-container button{
+    background-color: #00ffff;
+    color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+.add-button{
+    background-color: #00ffff;
+    color: black;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+}
+.popup-overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 100vh;  
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup-box{
+    background-color: #00ffff;
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top:20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .register-container {
+        width: 60%;
+        margin: 20px auto;
+    }
+    .popup-box {
+        width: 80%;
+        left: 10%;
+        top: 10%;
+    }
+    #map {
+        width: 550px;
+        height: 800px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 10px solid #00FFFF;
+        display: none;
+   
+   
+}
+}
+
+@media screen and (max-width: 480px) {
+    .register-container {
+        width: 90%;
+        padding: 10px;
+    }
+    .popup-box {
+        width: 90%;
+        left: 5%;
+        padding: 20px;
+    }
+   
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+    .cta-buttons .btn-primary, .cta-buttons .btn-secondary {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    /* Services */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact Form */
+    form input, form textarea {
+        width: 90%;
+    }
+}
